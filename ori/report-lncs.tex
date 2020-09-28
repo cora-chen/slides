@@ -1,0 +1,73 @@
+\documentclass[runningheads]{llncs}
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=0   % TODO: set to 0 for final version
+%=================================================================
+\usepackage{enumerate}
+\usepackage{indentfirst}
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\excludecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\excludecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+%
+%=================================================================
+
+
+%=================================================================
+%
+\begin{document}
+%
+%=================================================================
+% Preamble which will need to be changed for submission
+%
+\title{Summary of the week}
+%
+%\titlerunning{TULIP Lab Springer Template}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{
+Siyu Chen
+}
+%
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%\authorrunning{X. YY, G. Li et al.}
+
+\institute{
+Xi'an Shiyou University
+\email{785987165@qq.com}}
+
+
+
+
+%
+\maketitle              % typeset the header of the contribution
+
+%\begin{abstract}
+%\blindtext
+
+%\end{abstract}
+
+%=================================================================
+
+\input{mainbody}
+
+% ----------------------------------------------------------------
+\bibliography{tuliplab,yourbib}
+\bibliographystyle{splncs04}
+%=================================================================
+
+%\listoftodos
+
+\end{document}
+
